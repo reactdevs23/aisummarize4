@@ -1,0 +1,136 @@
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.wrapper {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imagesContainer {
+  width: 87%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imgContianer {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  max-width: 30px;
+}
+.line {
+  background: var(--lineColor);
+  width: 2px;
+}
+.oddElement .line {
+  --space: 50px;
+  height: 50px;
+}
+.oddElement::before {
+  height: calc(var(--space));
+}
+.evenElement .line {
+  height: 100px;
+}
+.divisibleBy2Not4 .line {
+  height: 150px;
+}
+
+.mainDiv {
+  width: 100%;
+  min-height: 111px;
+  border-radius: 23px;
+  background: var(--bg);
+}
+
+.heading {
+  color: var(--headingColor);
+
+  text-align: center;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  padding: 15px;
+  padding-top: 25px;
+}
+.features {
+  width: 87%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: -40px;
+}
+.feature {
+  border-radius: 20px;
+  aspect-ratio: 1/1.2;
+  border: var(--border);
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  flex: 1;
+}
+.featureIcon {
+  max-width: 42px;
+  width: 100%;
+}
+.featureTitle {
+  color: var(--titleColor);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+.advisor {
+  min-height: 90px;
+  padding: 18px;
+  padding-top: 0;
+  background: var(--bg);
+  border-radius: 20px;
+  width: 87%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.advisorIcon {
+  max-width: 52px;
+  width: 100%;
+  transform: translateY(-32%);
+}
+.advisorTitle {
+  color: var(--titleColor);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
